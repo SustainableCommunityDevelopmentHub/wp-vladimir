@@ -1,6 +1,8 @@
 # Enterwell Vladimir v0.1
 This is the starter WordPress theme that will allow you to easily include **React.js and Redux** into your WordPress site.
 
+*There is still work to be done here, but this helps us for now.*
+
 ## Quick Start
 In order to start just enter the following commands in your console:
 ```npm install```
