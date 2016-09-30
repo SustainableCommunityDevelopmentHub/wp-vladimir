@@ -1,0 +1,7 @@
+@import './../../styles/utils/colors-theme.scss';
+
+.container {
+    h1 {
+        border-bottom: solid 1px $red;
+    }
+}

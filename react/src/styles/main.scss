@@ -1,0 +1,100 @@
+@import './utils/colors-theme.scss';
+// body
+body {
+  margin: 0 !important;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+// clearfix
+.clearfix {
+  &::before {
+    content: '';
+    display: table;
+  }
+
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+button {
+  background-color: $red;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  outline: 0 !important;
+
+  &:hover, &:focus {
+    background-color: darken($red, 10%);
+  }
+}
+
+// navigation
+nav {
+  @extend .clearfix;
+
+  height: 50px;
+  padding: 5px 10px;
+  background-color: $colorDark;
+  color: $white;
+
+  // logo
+  img {
+    height: 40px;
+    margin-top: 3px;
+    margin-bottom: 0;
+  }
+
+  // navigation node
+  #navigation-node {
+    float: right;
+    padding-top: 7px;
+
+    // button
+    button {
+      margin-left: 10px;
+    }
+  }
+}
+
+// main
+main {
+  // TODO
+
+  //section container 
+  .section-container {
+    margin: 0 auto 30px;
+    width: 90%;
+    max-width: 840px;
+
+    h2 {
+      margin-bottom: 15px;
+    }
+
+    h3 {
+      margin-bottom: -10px;
+    }
+
+    // section
+    .section {
+      $color: #fefefe;
+      background-color: $color;
+      border: solid 1px darken($color, 5%);
+      padding: 10px;
+    }
+  }
+
+  // made with love
+  .made-with-love {
+    @extend .section-container;
+
+    text-align: right;
+
+    span {
+      color: $red;
+    }
+  }
+}
