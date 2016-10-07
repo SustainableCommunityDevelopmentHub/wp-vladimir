@@ -16,7 +16,7 @@ and then
 
 ```npm start```
 
-Last thing is to select *Enterwell Vladimir* theme from your WordPress admin.
+The last thing for you to do is select *Enterwell Vladimir* theme from your WordPress admin.
 
 Everything react related is on */react* folder.
 This readme will be updated, but in the meantime you can take a look at our [BLOG](http://enterwell.net/starter-wp-api-react-redux/).
