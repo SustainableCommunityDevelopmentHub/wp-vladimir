@@ -14,7 +14,8 @@ class RouterBase extends Component {
 
   // retrieves the url data
   retrieveUrlData() {
-    // TODO
+    // returns the location object from the window or null
+    return window ? window.location : null;
   }
 
   // routing function
