@@ -6,24 +6,13 @@ import ReduxToastr from 'react-redux-toastr';
 import { createStore, applyMiddleware, compose } from 'redux';
 import { Provider } from 'react-redux';
 import { Router, browserHistory } from 'react-router';
-import injectTapEventPlugin from 'react-tap-event-plugin';
 import createSagaMiddleware from 'redux-saga';
 import { AppContainer } from 'react-hot-loader';
-// TODO import rootSaga from './sagas/indexSaga.js';
 
 // styles
 // here is the main style, in this file you should include global styles for react app
 // this is ordinary scss file and it does NOT use css modules 
 require('./styles/main.scss');
-
-// requirements for animation
-// maybe we can delete this :)
-// require('velocity-animate');
-// require('velocity-animate/velocity.ui');
-
-
-// injects tap event plugin (for mobile phones)
-injectTapEventPlugin();
 
 // creates sagas middleware
 const sagaMiddleware = createSagaMiddleware();
